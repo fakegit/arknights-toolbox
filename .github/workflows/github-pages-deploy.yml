@@ -29,3 +29,4 @@ jobs:
       uses: Tsuk1ko/git-https-push-action@master
       with:
         remoteUrl: ${{ secrets.CODING_REMOTE_URL }}
+        forcePush: true
