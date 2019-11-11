@@ -1,0 +1,15 @@
+name: Deploy to Coding Pages
+on:
+  push:
+    branches:
+      - gh-pages
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Deploy
+      uses: ilkka/git-https-push-action@master
+      env:
+        remoteUrl: ${{ secrets.CODING_REMOTE_URL }}

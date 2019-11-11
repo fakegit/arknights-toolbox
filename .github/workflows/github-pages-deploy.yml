@@ -9,11 +9,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
-
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v2
       env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: dist
+        BRANCH: gh-pages
         FOLDER: dist
+        CNAME: arkn-gh.lolicon.app
         BUILD_SCRIPT: npm install && npm run build

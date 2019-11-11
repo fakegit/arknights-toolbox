@@ -1,6 +1,11 @@
 # arknights-toolbox
 
-明日方舟工具箱：[arkn.lolicon.app](https://arkn.lolicon.app)
+明日方舟工具箱
+
+目前依靠 Github Actions 自动化部署在以下两个 Pages 服务
+
+- **Coding Pages** - [arkn.lolicon.app](https://arkn.lolicon.app)
+- **Github Pages** - [arkn-gh.lolicon.app](https://arkn-gh.lolicon.app)
 
 宗旨是简洁美观且对移动设备友好，以及 Material Design 天下第一（。）
 
