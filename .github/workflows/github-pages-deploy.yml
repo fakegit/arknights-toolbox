@@ -26,6 +26,6 @@ jobs:
       with:
         ref: gh-pages
     - name: Deploy
-      uses: ilkka/git-https-push-action@master
+      uses: Tsuk1ko/git-https-push-action@master
       with:
         remoteUrl: ${{ secrets.CODING_REMOTE_URL }}
