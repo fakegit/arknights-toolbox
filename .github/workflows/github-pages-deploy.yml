@@ -17,3 +17,15 @@ jobs:
         FOLDER: dist
         CNAME: arkn-gh.lolicon.app
         BUILD_SCRIPT: npm install && npm run build
+  deploy-to-coding:
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+      with:
+        ref: gh-pages
+    - name: Deploy
+      uses: ilkka/git-https-push-action@master
+      with:
+        remoteUrl: ${{ secrets.CODING_REMOTE_URL }}
